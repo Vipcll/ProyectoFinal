@@ -1,12 +1,12 @@
 body{ background-color: antiquewhite;}
 
 
-main
+.mainDos
 {
 
     width: 315px;
-    border: 5px solid #560bad;
-    box-shadow: 5px 5px 30px 1px #560bad;
+    border: 5px solid #f76ae0;
+    box-shadow: 5px 5px 30px 1px #f76ae0;
     border-radius: 10px;
     margin: 100px auto;
     display: flex;
@@ -47,4 +47,10 @@ td button
     color:beige;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
+}
+
+.mainColorVioleta
+{
+    border: 5px solid #560bad;
+    box-shadow: 5px 5px 30px 1px #560bad;
 }

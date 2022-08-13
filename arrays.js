@@ -15,8 +15,6 @@ const botonLight = document.getElementById('botonLightMode');
 function tarjetas(id){
     tarjeta = document.getElementById(id);
     resultado = numero[id];
-    console.log(id)
-    console.log(resultado);
 
     if(vidas >= 0 && win == false)
     {
@@ -43,19 +41,24 @@ function tarjetas(id){
     }
 }
 
-if(localStorage.getItem('darkMode')) {
-    darkMode = localStorage.getItem('darkMode');
+if(localStorage.getItem('colorMode')) {
+    colorMode = localStorage.getItem('colorMode');
+    
 } else {
-    localStorage.setItem('darkMode', "light") ;
+    localStorage.setItem('colorMode', "light") ;
 }
 if(darkMode == "dark") {
     document.body.classList.add("darkMode");
+    document.getElementById("mainDos").classList.add("mainColorVioleta");
 }
 botonDark.addEventListener('click', () => {
     document.body.classList.add("darkMode");
-    localStorage.setItem('darkMode', "dark");
+    document.getElementById("mainDos").classList.add("mainColorVioleta");
+    
+    localStorage.setItem('colorMode', "dark");
 })
 botonLight.addEventListener('click', () => {
     document.body.classList.remove("darkMode");
-    localStorage.setItem('darkMode', "light");
+    localStorage.setItem('colorMode', "light");
+    document.getElementById("mainDos").classList.remove("mainColorVioleta");
 })
