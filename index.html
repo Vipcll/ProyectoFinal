@@ -4,20 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-        
-    
+    <main>
+        <section class="seccion1">
 
-    <h1>Enunciado:</h1>
-			<h2>
-				1.	Adivina el número
-				Al comenzar el juego generamos un número secreto del 1 al 10, 
-                si el número ingresado es el mismo que el número secreto se dará por terminado el juego 
-			</h2>
-
+            <h1>Juego de memoria</h1>
+            <table>
+                <tr>
+                    <td><button id="1" onclick="tarjetas(1)"></button></td>
+                    <td><button id="2" onclick="tarjetas(2)"></button></td>
+                    <td><button id="3" onclick="tarjetas(3)"></button></td>
+                </tr>
+                <tr>
+                    <td><button id="4" onclick="tarjetas(4)"></button></td>
+                    <td><button id="5" onclick="tarjetas(5)"></button></td>
+                    <td><button id="6" onclick="tarjetas(6)"></button></td>
+                </tr>
+                <tr>
+                    <td><button id="7" onclick="tarjetas(7)"></button></td>
+                    <td><button id="8" onclick="tarjetas(8)"></button></td>
+                    <td><button id="9" onclick="tarjetas(9)"></button></td>
+                </tr>
+            </table>
+        </section>
+    </main>
     <script type="text/javascript" src="arrays.js"></script>
-
 </body>
 </html>
